@@ -17,7 +17,7 @@ Understand the core architecture, SQL, data contracts, ingestion and a batch mar
 
 ## Shared fictional laboratory
 
-All companies, source feeds, people and sample records in this repository are **hypothetical Sanofi-inspired learning examples**, not claims about Sanofi's internal systems. Use synthetic or specifically approved datasets only. The consistent sandbox namespace is `PHARMA_DEMO`, with `RAW` (landing), `CORE` (validated), `MART` (consumption), and `OPS` (operational records). Some examples use additional domain schemas.
+All companies, source feeds, people and sample records in this repository are **hypothetical pharma-inspired learning examples**, not claims about pharma's internal systems. Use synthetic or specifically approved datasets only. The consistent sandbox namespace is `PHARMA_DEMO`, with `RAW` (landing), `CORE` (validated), `MART` (consumption), and `OPS` (operational records). Some examples use additional domain schemas.
 
 A minimal sandbox can be initialized from [`entry/04-data-types-tables.md`](../entry/04-data-types-tables.md). For role/warehouse prerequisites see [`entry/01-architecture.md`](../entry/01-architecture.md) and [`entry/02-objects-rbac.md`](../entry/02-objects-rbac.md). Statements may create billable resources or require privileges; execute only in an authorized disposable development environment. External services, cloud integrations and tools such as dbt/Airflow/Terraform must be set up separately.
 
@@ -36,7 +36,7 @@ A minimal sandbox can be initialized from [`entry/04-data-types-tables.md`](../e
 
 ## Synthetic CSV starter fixture
 
-To try the stage-loading chapter, save these four lines as **`sample_batch.csv`** in your working directory (UTF-8, header included). The values and IDs are invented and have no relationship to real Sanofi records.
+To try the stage-loading chapter, save these four lines as **`sample_batch.csv`** in your working directory (UTF-8, header included). The values and IDs are invented and have no relationship to real pharma records.
 
 ```csv
 batch_id,plant_id,product_id,event_ts,status,units_produced,units_rejected,source_updated_at
@@ -67,7 +67,7 @@ Read the mental model, run the focused example, validate it using a tiny synthet
 
 ## Quality and compliance boundary
 
-This repository is a learning resource, **not a validated Sanofi system** and not a source of clinical or manufacturing release rules. Never use real patient data, proprietary company extracts, credentials or unapproved model endpoints in exercises. For GxP-relevant uses, involve system owners, security and Quality to assess applicability, computer-system validation, electronic-record controls, retention and audit evidence. Cloud product features alone do not confer compliance.
+This repository is a learning resource, **not a validated pharma system** and not a source of clinical or manufacturing release rules. Never use real patient data, proprietary company extracts, credentials or unapproved model endpoints in exercises. For GxP-relevant uses, involve system owners, security and Quality to assess applicability, computer-system validation, electronic-record controls, retention and audit evidence. Cloud product features alone do not confer compliance.
 
 ## Sources and freshness
 

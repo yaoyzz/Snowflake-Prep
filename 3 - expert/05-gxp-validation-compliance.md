@@ -15,7 +15,7 @@
 
 A quality dashboard supports investigation of manufacturing deviations; it is not assumed to be an approved release decision system.
 
-The example is a **synthetic Sanofi-inspired** design, not an assertion about Sanofi internal infrastructure, specifications, vendors or production records. Where the topic touches clinical, quality or manufacturing data, actual production use requires the organization's approved source definitions, access controls and regulatory assessment.
+The example is a **synthetic pharma-inspired** design, not an assertion about pharma internal infrastructure, specifications, vendors or production records. Where the topic touches clinical, quality or manufacturing data, actual production use requires the organization's approved source definitions, access controls and regulatory assessment.
 
 ## 3. Practical implementation
 
@@ -61,7 +61,7 @@ Keep at minimum the source record count, authoritative business keys, run timest
 
 Use an approved AI coding assistant with a narrow, read-only or sandboxed scope. Example prompt:
 
-> In the hypothetical pharmaceutical project, implement or review **GxP, Data Integrity, and Computer System Validation**. The requirement is: Recognize regulated-use boundaries and plan appropriate electronic record controls and validation evidence. Use only synthetic examples and the documented `PHARMA_DEMO` contract. Produce the smallest reviewable SQL/Python/configuration diff, tests that fail on invalid or duplicate input, a source-to-target reconciliation plan, and expected outputs. Identify permissions, cost, freshness, privacy and rollback risks. Never invent proprietary Sanofi details, query unauthorized records, or deploy to production.
+> In the hypothetical pharmaceutical project, implement or review **GxP, Data Integrity, and Computer System Validation**. The requirement is: Recognize regulated-use boundaries and plan appropriate electronic record controls and validation evidence. Use only synthetic examples and the documented `PHARMA_DEMO` contract. Produce the smallest reviewable SQL/Python/configuration diff, tests that fail on invalid or duplicate input, a source-to-target reconciliation plan, and expected outputs. Identify permissions, cost, freshness, privacy and rollback risks. Never invent proprietary pharma details, query unauthorized records, or deploy to production.
 
 **Human review gate:** evaluate the proposed code against the acceptance check above; compare source semantics, query plans/tests as relevant, and explicitly approve any access changes or production operations.
 
